@@ -46,7 +46,7 @@ Responsibilities: Documentation
 
 '''
 
-=== Mingsi 
+=== Mingsi
 image::e0316059.png[width="150", align="left"]
 {empty}[http://github.com/e0316059[github]] [<<e0316059#, portfolio>>]
 
