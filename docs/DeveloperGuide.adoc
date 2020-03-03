@@ -375,14 +375,12 @@ Refer to the guide <<DevOps#, here>>.
 (For all use cases below, the *System* is `CookBuddy` and the *Actor* is the `user`, unless specified otherwise)
 
 [discrete]
-=== Use case: Delete person
+=== Use case: List recipes
 
 *MSS*
 
 1.  User requests to list recipes
 2.  CookBuddy shows a list of recipes, in _grid view_
-3.  User requests to delete a specific _recipe_ by specifying its name or index
-4.  CookBuddy deletes the recipe
 +
 Use case ends.
 
@@ -399,6 +397,31 @@ Use case ends.
 ** 3a1. `CookBuddy` throws an error message.
 +
 Use case resumes at step 2.
+
+
+[discrete]
+=== Use case: Delete recipe
+
+*MSS*
+
+1.  User requests to delete a specific _recipe_ by specifying its name or index
+2.  CookBuddy deletes the recipe
++
+Use case ends.
+
+*Extensions*
+
+[none]
+* 2a. The name cannot be found, or the index is invalid.
++
+[none]
+** 2a1. `CookBuddy` throws an error message.
++
+Use case ends.
+
+
+[discrete]
+=== Use case: Modify recipe
 
 *MSS*
 
