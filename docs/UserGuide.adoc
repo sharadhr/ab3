@@ -117,7 +117,7 @@ Search for recipes that are contain the tag `tag name` from the tag `tag type`
 Example: `search tag meal dinner` would return all the recipes which have been tagged under the dinner meal tag.
 
 === Clearing all entries - `reset`
-Clears all entries from *CookBuddy*.
+Clears all entries from the *CookBuddy* application.
 
 === Exiting the program - `exit`
 Exits the program.
