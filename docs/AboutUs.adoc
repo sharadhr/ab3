@@ -14,7 +14,7 @@ We are a team based in the http://www.comp.nus.edu.sg[School of Computing, Natio
 image::kevinswk94.png[width="150", align="left"]
 {empty}[https://github.com/kevinswk94[github]] [<<kevinswk94#, portfolio>>]
 
-Role: Team Lead
+Role: Team Lead +
 Responsibilities: UI
 
 '''
@@ -23,7 +23,7 @@ Responsibilities: UI
 image::muhd97.png[width="150", align="left"]
 {empty}[https://github.com/muhd97[github]] [<<muhd97#, portfolio>>]
 
-Role: Developer
+Role: Developer +
 Responsibilities: Data
 
 '''
@@ -32,7 +32,7 @@ Responsibilities: Data
 image::AdarshChugani.png[width="150", align="left"]
 {empty}[https://github.com/AdarshChugani[github]] [<<AdarshChugani#, portfolio>>]
 
-Role: Developer
+Role: Developer +
 Responsibilities: Dev Ops
 
 '''
@@ -41,16 +41,16 @@ Responsibilities: Dev Ops
 image::sharadhr.png[width="150", align="left"]
 {empty}[http://github.com/sharadhr[github]] [<<sharadhr#, portfolio>>]
 
-Role: Developer
+Role: Developer +
 Responsibilities: Documentation
 
 '''
 
-=== Mingsi
+=== Mingsi 
 image::e0316059.png[width="150", align="left"]
 {empty}[http://github.com/e0316059[github]] [<<e0316059#, portfolio>>]
 
-Role: Developer
+Role: Developer +
 Responsibilities: UI
 
 '''
