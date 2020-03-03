@@ -11,8 +11,8 @@ We are a team based in the http://www.comp.nus.edu.sg[School of Computing, Natio
 == Project Team
 
 === Adarsh Mohandas Chugani
-image::AdarshChugani.png[width="150", align="left"]
-{empty}[https://github.com/AdarshChugani[github]] [<<AdarshChugani#, portfolio>>]
+image::adarshchugani.png[width="150", align="left"]
+{empty}[https://github.com/AdarshChugani[github]] [<<adarshchugani#, portfolio>>]
 
 Role: Team Lead +
 Responsibilities: UI
