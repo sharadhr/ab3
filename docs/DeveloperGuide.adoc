@@ -393,7 +393,7 @@ Use case ends.
 +
 Use case ends.
 
-* 3a. The name cannot be found, or the index is invalid. 
+* 3a. The name cannot be found, or the index is invalid.
 +
 [none]
 ** 3a1. `CookBuddy` throws an error message.
@@ -412,10 +412,10 @@ Use case ends.
 
 [none]
 * 1a. User does not provide new attributes.
-** `CookBuddy` throws an error message. 
+** `CookBuddy` throws an error message.
 +
-Use case resumes at step 1. 
-* 2a. User does not confirm. 
+Use case resumes at step 1.
+* 2a. User does not confirm.
 +
 Use case ends.
 
