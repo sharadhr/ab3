@@ -279,51 +279,110 @@ Refer to the guide <<DevOps#, here>>.
 
 *Target user profile*:
 
-* has a need to manage a significant number of contacts
-* prefer desktop apps over other types
-* can type fast
-* prefers typing over mouse input
-* is reasonably comfortable using CLI apps
+* cooks for oneself on a nearly daily basis, and hence:
+   - needs to manage multiple recipes
+   - needs to have a clean interface to view and read dishes
+   _ experiments with dishes
 
-*Value proposition*: manage contacts faster than a typical mouse/GUI driven app
+* is reasonably familiar with the command-line
+
+* requires a straightforward means to catalogue and codify dishes and meals without using spreadsheets
+
+*Value proposition*:
+
+* Store, retrieve, manage and display recipes faster than navigating through websites and bookmarks, with command-line input, but GUI responses.
+
+* Present a unified interface for recipe management.
+
+* When managing recipes:
+   - allow easier and faster retrieval with attributes like tags, time, difficulty, etc;
+
+   - present a straightforward interface to edit, duplicate and combine recipes into meals
+
+* Export recipes to a printable, human-readable and consistent format
+
+
 
 [appendix]
 == User Stories
 
-Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (unlikely to have) - `*`
+[width="100%",cols="1%,30%,60%",options="header",]
+|===
+|Rating|Priority|Difficulty
+|1|Basic functionality—*MUST HAVE*                      | *Easy*—Java basics + minor modifications to existing code
+|2|Secondary functionality—*VERY IMPORTANT*             | *Some effort needed*—Moderate Java concepts (`Collections`, `Streams`, etc); < 5 _new_ classes needed
+|3|Recommended functionality                            | *More effort needed*—Obscure Java classes (`java.nio`, `java.time`, etc); new _package_ of classes needed
+|4|Nice to have                                         | *Difficult*—Time-consuming, >500+ LoC _just_ for this feature
+|5|Quality of life features, and all unfeasible options | *Nearly impossible*—not only everything in (4), but algorithmically challenging too, and approaching 1K LOC
+|===
 
-[width="59%",cols="22%,<23%,<25%,<30%",options="header",]
-|=======================================================================
-|Priority |As a ... |I want to ... |So that I can...
-|`* * *` |new user |see usage instructions |refer to instructions when I forget how to use the App
-
-|`* * *` |user |add a new person |
-
-|`* * *` |user |delete a person |remove entries that I no longer need
-
-|`* * *` |user |find a person by name |locate details of persons without having to go through the entire list
-
-|`* *` |user |hide <<private-contact-detail,private contact details>> by default |minimize chance of someone else seeing them by accident
-
-|`*` |user with many persons in the address book |sort persons by name |locate a person easily
-|=======================================================================
-
-_{More to be added}_
+[width="100%",cols="1%,1%,30%,30%,30%",options="header",]
+|===
+| Priority | Difficulty |                       As a…                       |                                      I can…                                      |                                So that…
+|        1 |          1 | Regular user                                      | add a recipe                                                                     | I can keep track of the recipe
+|        1 |          1 | Regular user                                      | delete a recipe                                                                  | stop keeping track of the recipe
+|        1 |          1 | Regular user                                      | list out all the recipies I have (names)                                         | easily see what recipies I have
+|        1 |          1 | Regular user                                      | view the recipe                                                                  | use the recipe
+|        1 |          1 | More experienced user                             | duplicate a recipe                                                               | modify a copy and keep the original
+|        1 |          1 | User who is inexperienced with software           | use a helper command                                                             | I can see all the commands and how to use them
+|        1 |          2 | Regular user                                      | add instructions for the recipe                                                  | I know how to cook the dish
+|        1 |          2 | Regular user                                      | add ingredient to recipe                                                         | I know how much ingredients to use
+|        1 |          2 | Health-focused user                               | track the amount of calories a dish has                                          | I know how healthy a dish is
+|        1 |          2 | Regular user                                      | add time it takes to prepare / cook recipe                                       | I know how long it takes to cook the recipe
+|        1 |          2 | Organized user                                    | tag recipes based on meal time (breakfast/lunch/dinner)                          | I can easily refer to them
+|        1 |          2 | User who likes experimenting                      | modify a recipe                                                                  | the recipe will be updated
+|        2 |          1 | User cooking for a group                          | find out how much of each ingredient i need                                      | I can get the ingredients at one go
+|        2 |          1 | Regular user                                      | add a serving size of a dish                                                     | I know the serving size of the recipe
+|        2 |          2 | Time-strapped user                                | see the preparation and cooking time for each recipe                             | plan my schedule around the time needed
+|        2 |          2 | Health-focused user                               | search for a dish based on how many calories i want to consume                   | eat healthily
+|        2 |          2 | User who is new to cooking                        | tag recipes based on difficulty (beginner/intermediate/master)                   | check if I am skilled enough to cook the dish
+|        2 |          2 | User with many recipes                            | tag and search for recipes based on their cuisine (western, chinese, indian etc) | find them easily
+|        2 |          2 | User who wants to be efficient                    | favourite recipes/dishes                                                         | I can easily refer back to them
+|        2 |          2 | User who wants to get rid of ingredients          | search for dishes based on ingredients                                           | I can use up the ingredients that I want to get rid of
+|        2 |          2 | Organized user                                    | tag and search dishes based on course (starter/main/dessert)                     | I can easily search for them
+|        2 |          2 | User with many recipes                            | search for recipes based on a word in the dish name                              | I can find it easily
+|        2 |          2 | Organized user                                    | mark recipe as successfully done                                                 | keep track of the recipes I have successfully attempted
+|        2 |          2 | User cooking for a group/ occassion               | scale up/down the recipe                                                         | I can prepare food for different group sizes
+|        2 |          2 | User on a budget                                  | check the total price of the dish                                                | check if it is within my budget
+|        2 |          2 | User with a limited budget                        | find recipes within my budget                                                    | I do not overspend
+|        2 |          2 | User with allergies                               | tag the dish as dangerous for allergies                                          | avoid cooking the dish
+|        2 |          3 | User who not experienced                          | highlight instructions in the recipe                                             | It is easier to follow the recipe
+|        2 |          3 | Organized user                                    | sort my recipies based on criteria (tags)                                        | I can choose what order to view them
+|        2 |          4 | Inexperienced user                                | view an image of the final dish                                                  | I know what dish I am cooking
+|        3 |          1 | Regular user                                      | add ingredient prices                                                            | I can tabulate the total cost of cooking dishes
+|        3 |          1 | Health-focused user                               | tag a dish e.g (Paleo/Keto/Vegan)                                                | I can check if the dish matches my dietary requirements
+|        3 |          1 | Organized user                                    | have a counter of total recipies in the book                                     | I can know how many recipes I have
+|        3 |          1 | User with a limited budget                        | view the price of a specific ingredient                                          | I know how much a ingredient costs
+|        3 |          2 | User with many friends                            | import and combine my friend's recipes from a file (.txt perhaps)                | I can have access to their recipies
+|        3 |          2 | User who enjoys challenging themselves            | suggest dish to attempt based on my previous successful attempts                 | I can become more skillful
+|        3 |          2 | Regular user                                      | give a personal rating for the dish                                              | tag, search for and sort dishes based on my personal rating of the dish
+|        3 |          2 | Regular user                                      | choose to only see the basic information for the recipe                          | easily skim through the instructions and ingredients
+|        3 |          2 | User who likes experimenting                      | give me a random recipe that i have added                                        | I can challenge myself to cook what has been given
+|        3 |          3 | Health-focused user                               | add nutrition facts                                                              | I can see how much sugar, salt, fat etc is in the dish prepared
+|        4 |          3 | User who is more familiar with the metric system  | Convert between metric and imperial sizes.                                       | I can use the tools I have without needing to convert elsewhere
+|        4 |          3 | User who usually prepares multiple dishes as sets | group dishes into sets                                                           | I can be more organised when cooking
+|        4 |          3 | User who is inexperienced with software           | view the recipe in a GUI                                                         | I have more visual feedback to work with
+|        4 |          4 | User who is experienced with the software         | use shorthand commands                                                           | I can navigate the software more efficiently
+|        5 |          4 | User who wants to challenge myself                | have a timer/stopwatch                                                           | time myself when I cook dishes and have a "best time" feature
+|        5 |          5 | User who doesn't like screens and prefers paper   | print recipes as pdf/paper                                                       | I can refer to it more easily
+|        5 |          5 | User who likes sharing my cooking                 | post my recipes and dishes on social media                                       | share recipes and images for others to use
+|        5 |          5 | User who appreciates efficiency                   | add a recipe directly from online                                                | I can be efficient
+|===
 
 [appendix]
 == Use Cases
 
-(For all use cases below, the *System* is the `AddressBook` and the *Actor* is the `user`, unless specified otherwise)
+(For all use cases below, the *System* is `CookBuddy` and the *Actor* is the `user`, unless specified otherwise)
 
 [discrete]
 === Use case: Delete person
 
 *MSS*
 
-1.  User requests to list persons
-2.  AddressBook shows a list of persons
-3.  User requests to delete a specific person in the list
-4.  AddressBook deletes the person
+1.  User requests to list recipes
+2.  CookBuddy shows a list of recipes, in _grid view_
+3.  User requests to delete a specific _recipe_ by specifying its name or index
+4.  CookBuddy deletes the recipe
 +
 Use case ends.
 
@@ -334,14 +393,33 @@ Use case ends.
 +
 Use case ends.
 
-* 3a. The given index is invalid.
+* 3a. The name cannot be found, or the index is invalid.
 +
 [none]
-** 3a1. AddressBook shows an error message.
+** 3a1. `CookBuddy` throws an error message.
 +
 Use case resumes at step 2.
 
-_{More to be added}_
+*MSS*
+
+1. User requests to modify a recipe
+2. CookBuddy edits attributes of the recipe, and asks for user confirmation
+3. User confirms, and edited recipe is saved to disk
++
+Use case ends.
+
+*Extensions*
+
+[none]
+* 1a. User does not provide new attributes.
+** `CookBuddy` throws an error message.
++
+Use case resumes at step 1.
+* 2a. User does not confirm.
++
+Use case ends.
+
+
 
 [appendix]
 == Non Functional Requirements
