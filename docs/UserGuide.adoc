@@ -20,31 +20,31 @@ endif::[]
 
 == Quick Start
 1. Ensure you have Java 11 or later installed on your machine.
-    - If not, download the latest Java Runtime Environment [here](https://www.java.com/en/download/). 
+    - If not, download the latest Java Runtime Environment [here](https://www.java.com/en/download/).
 
 2. Download the latest CookBuddy.jar.
- 
+
 3. Copy the file to the folder you want to use as the home folder for your CookBuddy program.
 
 4. Double-click the file to start the app. The GUI should appear in a few seconds.
-   
+
 5. Type the command in the command box and press Enter to execute it.
    e.g. typing help and pressing Enter will open the help window.
-   
+
 6. Some example commands you can try:
-   
+
    *    list : lists all recipes
-   
-   *    new recipe n/Chicken Rice ing/<Chicken, 1; ...> ins/<Mix Chicken with Rice>: 
+
+   *    new recipe n/Chicken Rice ing/<Chicken, 1; ...> ins/<Mix Chicken with Rice>:
     adds a recipe named Chicken Rice to the CookBuddy program.
-    
-   *    delete 3 : deletes the 3rd recipe shown in the current list 
-    
+
+   *    delete 3 : deletes the 3rd recipe shown in the current list
+
    *    exit : exits the app
 
 7. Refer to Section 3, [Features](#3.Features) for details of each command.
 
-==  Features 
+==  Features
 COMMAND FORMAT:
 
 * Words in angle brackets indicate that they are mandatory. `<index>` means that `index` is mandatory.
@@ -75,19 +75,19 @@ Format: `delete <index>`
 Modifies attributes of a recipe.
 
 Format: `modify <index> [ing/<idx. ingredient, quantity> [ins/instruction; ...] [tags/tag, ...]`
-    
+
 Example: `modify 1 ing/3. eggs, 2`
 Replaces the ingredient at index 3 with 2 eggs.
 
 Example: `modify 2 ins/<boil eggs; slice apples>`
 Replaces the instructions in the recipe from 'boil eggs' to 'slice apples'
 
-=== Add Calories to a Recipe — `add calories <index> <amount>` 
+=== Add Calories to a Recipe — `add calories <index> <amount>`
 Assigns a calorie value `amount` to dish number `<index>`, measured in $\text{kcal} = 4200 \text{ kJ}$.
 
 === List Recipes — `list`
 Lists out all the recipes with their respective indexes in the CookBuddy program.
-    
+
 === View a Recipe — `view <recipe>`
 Opens a recipe to view.
 
@@ -98,25 +98,25 @@ Tags a recipe (and the ingredient, if specified) as containing `allergen`.
 
 ==== Tag the serving size of a recipe — `tag serving <index> <serving size>`
 Tag the recipe with a serving size of `serving size`.
-   
+
 ==== Tag the meal type of a recipe — `tag meal <index> <meal type>`
 Tag the recipe as `meal type` such as breakfast/lunch/dinner
 
-=== Duplicate Recipe — `dup <index>`         
+=== Duplicate Recipe — `dup <index>`
 Duplicates the recipe found at the specified index, and places the new recipe at `index + 1`
 Useful for users who wish to experiment with recipes while keeping a copy of the original.
 
 === Search
-    
+
 ==== Search keyword — `search keyword <keyword>`
-Search for recipes that contain `keyword` in their name    
+Search for recipes that contain `keyword` in their name
 
 ==== Search tag — `search tag <tag type> <tag name>`
 Search for recipes that are contain the tag `tag name` from the tag `tag type`
 
 Example: `search tag meal dinner` would return all the recipes which have been tagged under the dinner meal tag.
 
-=== Clearing all entries - `reset`    
+=== Clearing all entries - `reset`
 Clears all entries from *CookBuddy*.
 
 === Exiting the program - `exit`
