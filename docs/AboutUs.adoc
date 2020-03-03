@@ -10,30 +10,31 @@ We are a team based in the http://www.comp.nus.edu.sg[School of Computing, Natio
 
 == Project Team
 
-=== Kevin
-image::kevinswk94.png[width="150", align="left"]
-{empty}[https://github.com/kevinswk94[github]] [<<kevinswk94#, portfolio>>]
+=== Adarsh Mohandas Chugani
+image::AdarshChugani.png[width="150", align="left"]
+{empty}[https://github.com/AdarshChugani[github]] [<<AdarshChugani#, portfolio>>]
 
 Role: Team Lead +
 Responsibilities: UI
 
 '''
 
-=== Zain Alam
-image::muhd97.png[width="150", align="left"]
-{empty}[https://github.com/muhd97[github]] [<<muhd97#, portfolio>>]
-
-Role: Developer +
-Responsibilities: Data
-
 '''
 
-=== Adarsh Chugani
-image::AdarshChugani.png[width="150", align="left"]
-{empty}[https://github.com/AdarshChugani[github]] [<<AdarshChugani#, portfolio>>]
+=== Kevin Sum
+image::kevinswk94.png[width="150", align="left"]
+{empty}[https://github.com/kevinswk94[github]] [<<kevinswk94#, portfolio>>]
 
 Role: Developer +
 Responsibilities: Dev Ops
+
+'''
+=== Qi Mingsi
+image::e0316059.png[width="150", align="left"]
+{empty}[http://github.com/e0316059[github]] [<<e0316059#, portfolio>>]
+
+Role: Developer +
+Responsibilities: UI
 
 '''
 
@@ -46,11 +47,10 @@ Responsibilities: Documentation
 
 '''
 
-=== Mingsi
-image::e0316059.png[width="150", align="left"]
-{empty}[http://github.com/e0316059[github]] [<<e0316059#, portfolio>>]
+=== Zain Alam
+image::muhd97.png[width="150", align="left"]
+{empty}[https://github.com/muhd97[github]] [<<muhd97#, portfolio>>]
 
 Role: Developer +
-Responsibilities: UI
+Responsibilities: Data
 
-'''
