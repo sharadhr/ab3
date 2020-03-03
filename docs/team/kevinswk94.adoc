@@ -1,4 +1,4 @@
-= John Doe - Project Portfolio
+= Kevin - Project Portfolio
 :site-section: AboutUs
 :imagesDir: ../images
 :stylesDir: ../stylesheets

@@ -1,4 +1,4 @@
-= John Doe - Project Portfolio
+= Sharadh Rajaraman - Project Portfolio
 :site-section: AboutUs
 :imagesDir: ../images
 :stylesDir: ../stylesheets
