@@ -425,7 +425,7 @@ Use case ends.
 == Non Functional Requirements
 
 .  Should work on any <<mainstream-os,mainstream OS>> as long as it has Java `11` or above installed.
-.  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
+.  Should be able to hold up to 1000 recipes without noticeable sluggishness in performance for typical usage.
 .  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
 
 _{More to be added}_
@@ -434,10 +434,13 @@ _{More to be added}_
 == Glossary
 
 [[mainstream-os]] Mainstream OS::
-Windows, Linux, Unix, OS-X
+Windows, macOS, Linux, UNIX
 
-[[private-contact-detail]] Private contact detail::
-A contact detail that is not meant to be shared with others
+[[recipe]] Recipe::
+A list of ingredients followed by a list of instructions, detailing how to prepare a dish.
+
+[[tag]] Tag::
+A (possibly custom) text marker that users can use to organise their recipes; examples include `vegetarian`, `spicy`, `Indian`. Tags can themselves be organised into groups, such as `cuisines`, `diet`, `ingredients`, `mealtime`, etc.
 
 [appendix]
 == Product Survey
