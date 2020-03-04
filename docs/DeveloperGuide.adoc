@@ -372,31 +372,36 @@ Refer to the guide <<DevOps#, here>>.
 [appendix]
 == Use Cases
 
-(For all use cases below, the *System* is `CookBuddy` and the *Actor* is the `user`, unless specified otherwise)
+(For all use cases below, the *System* is `CookBuddy` and the *Actor* is the `User`, unless specified otherwise)
 
 [discrete]
 === Use case: List recipes
 
 *MSS*
 
-1.  User requests to list recipes
-2.  CookBuddy shows a list of recipes, in _grid view_
+1.  `User` requests to list recipes
+2.  `CookBuddy` displays the list of recipes
 +
 Use case ends.
 
 *Extensions*
 
 [none]
+* 1a. The name cannot be found, or the index is invalid.
++
+[none]
+** 1a1. `CookBuddy` throws an error message.
++
+Use case resumes at step 1.
+
+[none]
 * 2a. The list is empty.
++
+[none]
+** 2a1. `CookBuddy` displays a message stating the list is empty
 +
 Use case ends.
 
-* 3a. The name cannot be found, or the index is invalid.
-+
-[none]
-** 3a1. `CookBuddy` throws an error message.
-+
-Use case resumes at step 2.
 
 
 [discrete]
@@ -404,7 +409,7 @@ Use case resumes at step 2.
 
 *MSS*
 
-1.  User requests to delete a specific _recipe_ by specifying its name or index
+1.  `User` requests to delete a specific _recipe_ by specifying its name or index
 2.  CookBuddy deletes the recipe
 +
 Use case ends.
@@ -412,10 +417,10 @@ Use case ends.
 *Extensions*
 
 [none]
-* 2a. The name cannot be found, or the index is invalid.
+* 1a. The name cannot be found, or the index is invalid.
 +
 [none]
-** 2a1. `CookBuddy` throws an error message.
+** 1a1. `CookBuddy` throws an error message.
 +
 Use case ends.
 
@@ -425,20 +430,24 @@ Use case ends.
 
 *MSS*
 
-1. User requests to modify a recipe
-2. CookBuddy edits attributes of the recipe, and asks for user confirmation
-3. User confirms, and edited recipe is saved to disk
+1. `User` requests to modify a recipe
+2. `CookBuddy` edits attributes of the recipe, and asks for user confirmation
+3. `User` confirms the edit
 +
 Use case ends.
 
 *Extensions*
 
 [none]
-* 1a. User does not provide new attributes.
+* 1a. `User` does not provide new attributes.
+[none]
 ** `CookBuddy` throws an error message.
 +
 Use case resumes at step 1.
-* 2a. User does not confirm.
+* 2a. `User` does not confirm.
++
+[none]
+** 2a1. `CookBuddy` does not save the edit
 +
 Use case ends.
 
